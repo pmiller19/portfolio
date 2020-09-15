@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags poops-->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700|Titillium+Web&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+  <!--our styles-->
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <!--jQuery stuff-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <title>Parker Miller</title>
+
+  <!---jquery CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <div class="heading">
+    <!-- linking example
+        <a href="../index.html"></a> -->
+    <!-- image example
+            <img
+          id="../imagesunl-logo"
+          class="heading-child"
+          src="unlLogo2.jpg"
+          width="55"
+          height="55"
+          alt="logo"
+        /> -->
+
+    <p class="heading-child" style="font-family: Inter;"><strong>Hello, I am Parker Miller 👋</strong></p>
+    <p style="font-family: Inter;"><a class="email" href="mailto:parker.miller@me.com">parker.miller@me.com</a></p>
+    <p style="font-family: Inter;">Phone: 913-972-1424</p>
+    <div style="text-align: center;">
+      <a href='Parker-Miller-Resume.pdf' target='blank'>
+        <button class="buttons" style="border: none; background-color: #f3c623; border-radius: 10px; ">
+          <p style="font-family: Inter; padding-left: 10px; padding-right: 10px; margin: auto;">View My Resume</p>
+        </button>
+      </a>
+    </div>
+    <a href='https://www.linkedin.com/in/parker-miller19?trk=profile-badge' target='blank'>
+      <img src="Linked-In.png" width="auto" height="50" />
+    </a>
+
+
+    <!-- <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="parker-miller19"><a class="LI-simple-link" href='https://www.linkedin.com/in/parker-miller19?trk=profile-badge'>Parker Miller</a></div> -->
+    <!--Old linkedIn thing-->
+    <!-- <div class="LI-profile-badge" style = "margin-top: 3vh" data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="parker-miller19"><a class="LI-simple-link" href='https://www.linkedin.com/in/parker-miller19?trk=profile-badge'>Parker Miller</a></div> -->
+  </div>
+
+  <!-- About me button and Education block-->
+  <h1 style="font-family: Inter; margin-left: 20pt;">About Me</h1>
+  <button style="font-family: Inter;" class="information-block" id="aboutMeBtn">
+    <!-- <h1 class="information-block-header">About me</h1> -->
+    <div class="about-me-image">
+      <img id="../composite-picture" src="composite-picture.jpeg" />
+    </div>
+    <h3>Welcome to my portfolio! To find out more about me, please click anywhere in this box. Feel free to look around
+      this portfolio to find out more about my life!</h3>
+  </button>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" style="display: none;">&times;</span>
+      <p>
+        Hello, my name is Parker Miller. I am originally from Kansas City,
+        but now go to school at the University of Nebraska - Lincoln in the Raikes School of Computer Science and
+        Business Management. The Raikes school is a highly selective and prestigious school within the honors program at
+        the University of Nebraska. The main focus of the Raikes program is the interdisciplinary combination of
+        computer science, business, and teamwork. Within this school and previous internships I have picked up skills in
+        Java, C#,
+        C, C++, JavaScript, Python, R, SQL, HTML, CSS, and React.js.
+      </p>
+      <p>
+        Outside of academics I love playing sports with my friends (specifically lacrosse). I also enjoy playing video
+        games and binge
+        watching tv shows. Whenever I have free time I like to keep myself busy by working on a side project or hanging
+        out with my
+        friends.
+      </p>
+      <p>
+        I am also a Raikes School Ambassador, where I Act as a liaison between potential
+        students and the Raikes school, as well as give tours and answer any questions they might have. I am also a
+        member of the
+        Alpha Tau chapter of Beta Theta Pi here at the university. Inside of Beta I am the assistant new member educator
+        and the
+        technology chair. Being the assistant new member educator entails leading a group of 35 young men and seamlessly
+        transitioning them to college life and help them with all issues they run into. As technolofy chair, I am
+        responsible
+        for assisting every member of the house in connecting to the printer (and fixing it when necessary), connecting
+        to the wifi,
+        fixing their ethernet ports and connections, and maintaining the Beta website (as well as setting up accounts
+        for all new members).
+      </p>
+    </div>
+  </div>
+
+  <!-- About me modal JavaScript -->
+  <script>
+    // // Get the modal 
+    // var modal = document.getElementById('myModal');
+
+    // // Get the button that opens the modal 
+    // var btn = document.getElementById("aboutMeBtn");
+
+
+    // // Get the <span> element that closes the modal 
+    // var span = document.getElementsByClassName("close")[0];
+    // // When the user clicks on the button, open the modal  
+    // btn.onclick = function () {
+    //   modal.style.display = "block";
+    // }
+    // // When the user clicks on <span> (x), close the modal 
+    // span.onclick = function () {
+    //   modal.style.display = "none";
+    // }
+    // // When the user clicks anywhere outside of the modal, close it 
+    // window.onclick = function (event) {
+    //   if (event.target == modal) {
+    //     modal.style.display = "none";
+    //   }
+    // } 
+  </script>
+
+  <!--Education Block-->
+  <div class="col">
+    <h1 style="font-family: Inter; margin-left: 20pt; margin-top: 5%;">Education</h1>
+    <div class="information-block-education">
+      <!-- <h1 class="information-block-header">Education</h1> -->
+      <h2 style="margin-left: 2%; margin-top: 2%;">Univeristy of Nebraska - Lincoln, Raikes School Of Computer Science
+        and Business
+        Management</h2>
+      <p class="education-text">
+        The Raikes school is a highly selective and prestigious school within the honors program at the University of
+        Nebraska, with a focus on
+        the interdisciplinary combination of computer science, business, and leadership.
+      </p>
+      <p class="education-text">
+        Major: Computer Science and Mathematics
+      </p>
+      <p class="education-text">
+        Minor: Business Management
+      </p>
+      <p class="education-text">
+        College GPA: 3.88/4.0
+      </p>
+      <p class="text">
+        Dean’s List Fall 2019 and Spring 2020
+      </p>
+    </div>
+  </div>
+
+  <h1 style="font-family: Inter; margin-left: 20pt; margin-top: 5%;">Projects</h1>
+
+  <div class="row" style="margin-left: 6px;">
+
+    <button class="information-block" style="margin-top: 2%;" id="paymentTracker">
+      <img src="Payment-Tracker.png" width="auto" height="375" />
+      <h2>Payment Tracker<br>PWA</h2>
+    </button>
+
+    <button class="information-block" style="margin-top: 2%;" id="baseballStats">
+      <img src="unl-logo-new.png" width="auto" height="375" />
+      <h2>Baseball Statistics<br>Tracker</h2>
+    </button>
+
+    <button class="information-block" style="margin-top: 2%;" id="portfolio">
+      <img src="portfolio.png" width="400" height="375" />
+      <h2>Portfolio</h2>
+    </button>
+  </div>
+
+  <!-- The Payment Tracker Modal -->
+  <div id="paymentTrackerModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content" style="text-align: center;">
+      <span class="close" style="display: none;">&times;</span>
+
+      <h1>Payment Tracker PWA</h1>
+      <div class="row">
+        <div class="col">
+          <img src="Payment-Tracker-App.png" width="250" height="400" />
+        </div>
+        <div class="col">
+          <p>
+            The payment tracker progressive web app was designed to assist fraternity organizations
+            in tracking which of their members had paid for a given event. This is currently being used in two
+            fraternities
+            at UNL. This progressive web app solves an issue that I was approached about regarding knowing who has paid
+            and making it easier on the social teams to track this as they have alot on their plates. I was constantly
+            in contact with the social team members from these two fraternities getting their feedback on all the
+            changes I had made, constantly creating new iteration of the app until they were satisfied.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Baseball Stats Modal -->
+  <div id="baseballStatsModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" style="display: none;">&times;</span>
+      <h1>Baseball Stats Tracker</h1>
+      <p>
+        This website was designed to be used by the UNL baseball team. We were approached by the
+        baseball coach about a problem he had recording the statistics of his players in practice -- and the players
+        were unable to see their performance from practice until the end of the week. This website enables them to see
+        their
+        stats right after practice, and it makes it easier on the baseball managers to record these stats (as opposed to
+        the
+        paper and pencil method they were using before).
+      </p>
+    </div>
+  </div>
+
+  <!-- The Payment Tracker Modal -->
+  <div id="portfolioModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content" style="text-align: center;">
+      <span class="close" style="display: none;">&times;</span>
+      <h1>Portfolio</h1>
+      <p>
+        I created a portfolio website in order to explain the projects I have worked on in the hopes that employers
+        would enjoy their experience interacting with it and give me the opporunity to intern for them. I enjoy
+        working on projects like these because it teaches me alot, and I love learning new languages and concepts.
+        During this project specifically, I learned alot about UI design and how to get better at HTML and css.
+      </p>
+    </div>
+  </div>
+
+  <h1 style="font-family: Inter; margin-left: 20pt; margin-top: 5%;">Work Experience</h1>
+  <div class="information-block-normal">
+    <h1 style="margin-left: 2%; margin-top: 2%;">CSG International Software Developer Intern (2020)</h1>
+    <p class="text">
+      I was tasked with a project to convert an existing project from C++ to C#, thus
+      converting from .NET Framework to .NET Core. I was given an immense amount of
+      responsibility to complete this project while working from home during COVID-19.
+      Throughout this experience, I learned C++, C#, and major problem-solving skills, skills in Visual Studio, and how
+      to tackle problems
+      I have never seen before. This was a great experience that taught me so many valuable skills and lessons, and I
+      look forward to more
+      internhships in the tech industry in the future.
+    </p>
+  </div>
+
+
+  <h1 style="font-family: Inter; margin-left: 20pt; margin-top: 5%;">Leadership</h1>
+  <div class="row" style="margin-left: 6px;">
+
+    <button class="information-block" style="margin-top: 2%;" id="betaLeadership">
+      <img src="Beta_Theta_Pi_Coat_of_Arms.png" width="auto" height="400" />
+      <h2>Beta Theta Pi<br>Leadership</h2>
+    </button>
+
+    <button class="information-block" style="margin-top: 2%;" id="raikesLeadership">
+      <img src="Raikes-School.png" width="auto" height="400" />
+      <h2>Raikes School<br>Leadership</h2>
+    </button>
+  </div>
+
+  <!-- decide if I want boys state shit
+    <div class="information-block">
+
+
+    <p style="margin-left: 2%;">Boys State of Kansas - President of the Senate (2018)</p>
+    <p class="text">
+      I was elected President of the Senate at Boys State of Kansas (the second highest position at the Kansas Boys
+      State). My
+      responsibility with this job were to manage the creation of a daily docket, lead senate sessions, and preserved
+      order in
+      the senate, consisting of 40 members. This position taught me leadership as I was the sole person in charge of
+      ensuring the
+      senate passed bills, so I was constantly required to pay heavy attention to details and call on who was allowed to
+      speak at a given
+      time (which proved difficult in pressing issues where people had a multitude of different opinions such as when
+      passing bills
+      about taxes).
+    </p>
+  </div> -->
+
+  <!-- The Beta Modal -->
+  <div id="betaModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" style="display: none;">&times;</span>
+      <h1>Elected Technology Chair for Beta Theta Pi (2020)</h1>
+      <p>
+        Responsible for ensuring all technology functions properly within the house. This includes helping all members
+        connect to Wifi, fix their
+        ethernet port connections, fix the printer when it is broken, connect everyone to the printer, set up every
+        member's Beta
+        accounts, and maintaining our Beta website and database.
+      </p>
+      <h1>Elected Assistant New Member Educator (2020)</h1>
+      <p>
+        Responsible for leading a group of 35 young men by seamlessly transitioning them to college life, helping them
+        with time management
+        and study skills. I also ensure that every new members learns our songs and history, which is very important to
+        the active chapter.
+        Lastly, I am always available as a resource for the new members to talk to if they are ever overwhelmed with
+        college or need assistance
+        on homework, learning their songs and history, or if they just need somebody to talk to.
+      </p>
+    </div>
+  </div>
+
+  <!-- The Raikes Modal -->
+  <div id="raikesModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" style="display: none;">&times;</span>
+      <h1>Raikes School Peer Mentor (2020)</h1>
+      <p>
+        I was paired up with two individuals in the Raikes school cohort 2020 (freshmen this year). My job is to help
+        them
+        seamlessly
+        transition into college and the Raikes school, and answer any questions they have about classes, living in
+        Kauffman (the Raikes school
+        building), or any other questions they may have (similar to my assistant new member educator role, but with the
+        Raikes school
+        instead of Beta).
+      </p>
+      <h1>Raikes School Ambassador (2019 - 2020)</h1>
+      <p>
+        Act as a liaison between potential students and the Raikes school. I also give tours to potential new Raikes
+        school members and their families.
+        During these tours, I answer any question the student or family member may have, whether it pertains to the
+        Raikes
+        school
+        or the university in general. This has allowed me to become a face of the Raikes school and ensure we are always
+        bringing in
+        new talent into the program.
+      </p>
+    </div>
+  </div>
+
+
+
+  <!-- About me modal JavaScript -->
+  <script>
+    // Get the modal 
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal 
+    var btn = document.getElementById("aboutMeBtn");
+
+
+    // Get the <span> element that closes the modal 
+    var span = document.getElementsByClassName("close")[0];
+    // When the user clicks on the button, open the modal  
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+    // When the user clicks on <span> (x), close the modal 
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+    // When the user clicks anywhere outside of the modal, close it 
+    // window.onclick = function (event) {
+    //   if (event.target == modal) {
+    //     modal.style.display = "none";
+    //   }
+    // }
+
+    // Get the modal 
+    var betaModal = document.getElementById('betaModal');
+    var raikesModal = document.getElementById('raikesModal');
+    var paymentModal = document.getElementById('paymentTrackerModal');
+    var baseballModal = document.getElementById('baseballStatsModal');
+    var portfolioModal = document.getElementById('portfolioModal');
+
+
+    // Get the button that opens the modal 
+    var betaBtn = document.getElementById("betaLeadership");
+    var raikesBtn = document.getElementById("raikesLeadership");
+    var paymentBtn = document.getElementById("paymentTracker");
+    var baseballBtn = document.getElementById("baseballStats");
+    var portfolioBtn = document.getElementById("portfolio");
+
+
+    // Get the <span> element that closes the modal 
+    var betaSpan = document.getElementsByClassName("close")[1];
+    var raikesSpan = document.getElementsByClassName("close")[2];
+    var paymentSpan = document.getElementsByClassName("close")[3];
+    var baseballSpan = document.getElementsByClassName("close")[4];
+    var portfolioSpan = document.getElementsByClassName("close")[5];
+
+    paymentBtn.onclick = function () {
+      paymentModal.style.display = "block";
+    }
+
+    paymentSpan.onclick = function () {
+      paymentModal.style.display = "none";
+    }
+
+    baseballBtn.onclick = function () {
+      baseballModal.style.display = "block";
+    }
+
+    baseballSpan.onclick = function () {
+      baseballModal.style.display = "none";
+    }
+
+    portfolioBtn.onclick = function () {
+      portfolioModal.style.display = "block";
+    }
+
+    portfolioSpan.onclick = function () {
+      portfolioModal.style.display = "none";
+    }
+
+    // When the user clicks on the button, open the modal  
+    betaBtn.onclick = function () {
+      betaModal.style.display = "block";
+    }
+    // When the user clicks on <span> (x), close the modal 
+    betaSpan.onclick = function () {
+      betaModal.style.display = "none";
+    }
+
+    // When the user clicks on the button, open the modal  
+    raikesBtn.onclick = function () {
+      raikesModal.style.display = "block";
+    }
+    // When the user clicks on <span> (x), close the modal 
+    raikesSpan.onclick = function () {
+      raikesModal.style.display = "none";
+    }
+    // When the user clicks anywhere outside of the modal, close it 
+    window.onclick = function (event) {
+      if (event.target == betaModal) {
+        betaModal.style.display = "none";
+      } else if (event.target == modal) {
+        modal.style.display = "none";
+      } else if (event.target == raikesModal) {
+        raikesModal.style.display = "none";
+      } else if (event.target == paymentModal) {
+        paymentModal.style.display = "none";
+      } else if (event.target == baseballModal) {
+        baseballModal.style.display = "none";
+      } else if (event.target == portfolioModal) {
+        portfolioModal.style.display = "none";
+      }
+    } 
+  </script>
+
+
+  <h1 style="font-family: Inter; margin-left: 20pt; margin-top: 5%;">Relevant Coursework</h1>
+  <div class="information-block-normal">
+
+    <div class="row">
+
+      <div class="col">
+        <p style="margin-left: 4%; margin-top: 3%;">Computer Science I & II (Java and SQL)</p>
+        <p style="margin-left: 4%;">Software Engineering III & IV (JavaScript & Algorithms)</p>
+        <p style="margin-left: 4%;">Statistics (R & Python)</p>
+        <p style="margin-left: 4%;">Computer Systems Engineering (C)</p>
+      </div>
+      <div class="col">
+        <p style="margin-left: 4%; margin-top: 3%;">Unix</p>
+        <p style="margin-left: 4%;">Finance</p>
+        <p style="margin-left: 4%;">Leadership</p>
+        <p style="margin-left: 4%;">Innovative Processes (Design Thinking</p>
+      </div>
+    </div>
+  </div>
+
+  <h1 style="font-family: Inter; margin-left: 20pt; margin-top: 5%;">Revelant Skills</h1>
+  <div class="information-block-normal">
+
+    <div class="row">
+      <div class="col">
+        <p style="margin-left: 4%; margin-top: 3%;">★★★★☆ &nbsp; &nbsp; &nbsp; Java</p>
+        <p style="margin-left: 4%;">★★★★☆ &nbsp; &nbsp; &nbsp; C#</p>
+        <p style="margin-left: 4%;">★★★☆☆ &nbsp; &nbsp; &nbsp; SQL</p>
+        <p style="margin-left: 4%;">★★★☆☆ &nbsp; &nbsp; &nbsp; JavaScript</p>
+        <p style="margin-left: 4%;">★★★☆☆ &nbsp; &nbsp; &nbsp; C</p>
+        <p style="margin-left: 4%;">★★★☆☆ &nbsp; &nbsp; &nbsp; Python</p>
+        <p style="margin-left: 4%;">★★★☆☆ &nbsp; &nbsp; &nbsp; R</p>
+      </div>
+      <div class="col">
+        <p style="margin-left: 2%; margin-top: 3%;">★★☆☆☆ &nbsp; &nbsp; &nbsp; C++</p>
+        <p style="margin-left: 2%;">★★☆☆☆ &nbsp; &nbsp; &nbsp; HTML</p>
+        <p style="margin-left: 2%;">★★☆☆☆ &nbsp; &nbsp; &nbsp; CSS</p>
+        <p style="margin-left: 2%;">★★☆☆☆ &nbsp; &nbsp; &nbsp; React</p>
+        <p style="margin-left: 2%;">★★★★★ &nbsp; &nbsp; &nbsp; Eclipse</p>
+        <p style="margin-left: 2%;">★★★★☆ &nbsp; &nbsp; &nbsp; Visual Studio</p>
+        <p style="margin-left: 2%;">★★★★☆ &nbsp; &nbsp; &nbsp; Visual Studio Code</p>
+        <p class="text"></p>
+      </div>
+    </div>
+  </div>
+  <style>
+    .tab {
+      tab-size: 8;
+    }
+  </style>
+
+  <!-- This is an example of making a progress bar
+      <div class="w3-border">
+      <div class="w3-blue" style="height:24px;width:80%"></div>
+    </div> -->
+
+  <!-- <div class="linkedin"><div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="parker-miller19"><a class="LI-simple-link" href='https://www.linkedin.com/in/parker-miller19?trk=profile-badge'>Parker Miller</a></div></div> -->
+
+  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+</body>ß
+
+</html>
