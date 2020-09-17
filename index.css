@@ -138,6 +138,17 @@
     transform: translateY(-10px);
   }
 
+  .linkedIn {
+    transition: .5s;
+  }
+
+  .linkedIn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: scale(1.01);
+    transform: translateY(-10px);
+    border-radius: 10px;
+  }
+
   .information-block-normal {
     border-style: solid;
     border-color: #10375c;
